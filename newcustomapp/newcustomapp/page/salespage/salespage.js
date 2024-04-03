@@ -117,11 +117,14 @@ frappe.pages['salespage'].on_page_load = function(wrapper) {
 				},
 			});
 		}
+
+
 		render() {
 			let me = this;
 			 (me.options.chart == "sales_funnel")
 				me.render_funnel();
 			}
+			
 		render_funnel() {
 			var me = this;
 			this.prepare_funnel();
