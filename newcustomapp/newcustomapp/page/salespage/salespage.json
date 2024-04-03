@@ -1,0 +1,20 @@
+{
+ "content": null,
+ "creation": "2024-04-03 12:05:30.447431",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-04-03 12:08:29.152673",
+ "modified_by": "Administrator",
+ "module": "newcustomapp",
+ "name": "salespage",
+ "owner": "Administrator",
+ "page_name": "salespage",
+ "restrict_to_domain": "Retail",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "sales"
+}
