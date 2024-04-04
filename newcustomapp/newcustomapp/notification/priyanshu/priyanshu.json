@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-04-03 17:02:06.728123",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "WebFormDoc",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Thanks For Creating Accounts.",
+ "modified": "2024-04-03 17:08:41.393767",
+ "modified_by": "Administrator",
+ "module": "newcustomapp",
+ "name": "Priyanshu",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Priyanshu",
+ "sender_email": "priyanshu.awas011@gmail.com",
+ "subject": "Confirmation Email"
+}

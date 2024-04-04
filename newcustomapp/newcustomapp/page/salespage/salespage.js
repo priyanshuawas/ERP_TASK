@@ -5,12 +5,6 @@ frappe.pages['salespage'].on_page_load = function(wrapper) {
 		single_column: true
 	});
 
-	frappe.pages['sales'].on_page_load = function(wrapper) {
-		var page = frappe.ui.make_app_page({
-			parent: wrapper,
-			title: 'Sales',
-			single_column: true
-		});
 		wrapper.sales = new erpnext.Sales(wrapper);
 		frappe.breadcrumbs.add("Selling");
 	};
@@ -124,7 +118,7 @@ frappe.pages['salespage'].on_page_load = function(wrapper) {
 			 (me.options.chart == "sales_funnel")
 				me.render_funnel();
 			}
-			
+
 		render_funnel() {
 			var me = this;
 			this.prepare_funnel();
@@ -216,4 +210,3 @@ frappe.pages['salespage'].on_page_load = function(wrapper) {
 			});
 		}
 	};
-}

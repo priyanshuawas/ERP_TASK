@@ -4,14 +4,18 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2024-04-03 12:08:29.152673",
+ "modified": "2024-04-03 12:41:01.118658",
  "modified_by": "Administrator",
  "module": "newcustomapp",
  "name": "salespage",
  "owner": "Administrator",
  "page_name": "salespage",
  "restrict_to_domain": "Retail",
- "roles": [],
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
  "script": null,
  "standard": "Yes",
  "style": null,
