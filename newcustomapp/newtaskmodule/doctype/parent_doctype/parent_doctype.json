@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-04 16:24:26.407997",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "length_of_child_table_1",
+  "length_of_child_table_2",
+  "child_table_1",
+  "child_table_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "length_of_child_table_1",
+   "fieldtype": "Int",
+   "label": "Length of Child Table 1"
+  },
+  {
+   "fieldname": "length_of_child_table_2",
+   "fieldtype": "Int",
+   "label": "Length of Child Table 2"
+  },
+  {
+   "fieldname": "child_table_1",
+   "fieldtype": "Table",
+   "label": "child_table_1",
+   "options": "ChildTable1"
+  },
+  {
+   "fieldname": "child_table_2",
+   "fieldtype": "Table",
+   "label": "child_table_2",
+   "options": "ChildTable2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-04 17:15:27.927841",
+ "modified_by": "Administrator",
+ "module": "NewTaskModule",
+ "name": "Parent DocType",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
