@@ -1,45 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-04-04 16:24:26.407997",
+ "creation": "2024-04-05 11:21:43.414541",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "length_of_child_table_1",
-  "length_of_child_table_2",
   "child_table_1",
-  "child_table_2"
+  "child_table_2",
+  "length_of_child_tables"
  ],
  "fields": [
   {
-   "fieldname": "length_of_child_table_1",
-   "fieldtype": "Int",
-   "label": "Length of Child Table 1"
-  },
-  {
-   "fieldname": "length_of_child_table_2",
-   "fieldtype": "Int",
-   "label": "Length of Child Table 2"
-  },
-  {
    "fieldname": "child_table_1",
    "fieldtype": "Table",
-   "label": "child_table_1",
+   "label": "Child Table 1",
    "options": "ChildTable1"
   },
   {
    "fieldname": "child_table_2",
    "fieldtype": "Table",
-   "label": "child_table_2",
+   "label": "Child Table 2",
    "options": "ChildTable2"
+  },
+  {
+   "fieldname": "length_of_child_tables",
+   "fieldtype": "Int",
+   "label": "Length of Child Tables",
+   "options": "Read only"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-04 17:15:27.927841",
+ "modified": "2024-04-05 12:02:31.467610",
  "modified_by": "Administrator",
  "module": "NewTaskModule",
- "name": "Parent DocType",
+ "name": "ParentDoctype",
  "owner": "Administrator",
  "permissions": [
   {

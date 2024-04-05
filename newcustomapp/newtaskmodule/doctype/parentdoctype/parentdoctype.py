@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ParentDocType(Document):
+class ParentDoctype(Document):
 	pass
