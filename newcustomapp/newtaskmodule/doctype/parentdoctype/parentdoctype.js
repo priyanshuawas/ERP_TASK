@@ -1150,6 +1150,8 @@ frappe.ui.form.on('ChildTable2', {
             cur_frm.refresh_field('child_table_1');
         };
 
+        
+
         frm.fields_dict['child_table_2'].grid.on_grid_row_removed = function(doc, cdt, cdn) {
             var removed_row = locals[cdt][cdn];
             cur_frm.doc.child_table_1.forEach(function(row, index) {
