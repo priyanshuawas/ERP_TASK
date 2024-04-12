@@ -53,6 +53,8 @@ def get_context(context):
 # def attach_email_trigger():
 #     frappe.db.after_insert("Web Form", send_email_on_webform_creation)
 def send_email_on_creation(doc, method=None):
+
+    
     if method == "on_create":
         email_content = "A new WebFormDoc has been created with the following details:\n\n"
         email_content += "First Name: {}\n".format(doc.first_name)
@@ -62,6 +64,5 @@ def send_email_on_creation(doc, method=None):
         frappe.sendmail(
             recipients=["priyanshu.awas011@gmail.com"], 
             subject="New WebFormDoc Created",
-            message=email_content
-        )
+            message=email_content)
 
