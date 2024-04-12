@@ -1,4 +1,4 @@
-import frappe
+import frappe # type: ignore
 
 def get_context(context):
 	# do your magic here
@@ -50,7 +50,6 @@ def get_context(context):
 #             message=email_content
 #         )
 #         frappe.msgprint("Details submitted successfully!")  # This will display a message upon successful submission
-
 # def attach_email_trigger():
 #     frappe.db.after_insert("Web Form", send_email_on_webform_creation)
 def send_email_on_creation(doc, method=None):
@@ -60,7 +59,6 @@ def send_email_on_creation(doc, method=None):
         email_content += "Last Name: {}\n".format(doc.last_name)
         email_content += "Phone No: {}\n".format(doc.phone_no)
         email_content += "Email: {}\n".format(doc.email)
-        
         frappe.sendmail(
             recipients=["priyanshu.awas011@gmail.com"], 
             subject="New WebFormDoc Created",
