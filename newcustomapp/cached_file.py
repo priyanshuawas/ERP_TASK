@@ -12,7 +12,7 @@
 #     items = frappe.get_all("Item", fields=["item_code", "item_group"])
 #     formatted_data = [{"item_code": item.item_code, "item_group": item.item_group} for item in items]
 #     return formatted_data
-import frappe
+import frappe # type: ignore
 
 @frappe.whitelist()
 def get_cached_data():
