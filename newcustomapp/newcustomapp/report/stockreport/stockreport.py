@@ -13,7 +13,6 @@
 #         {"label": "Actual Qty", "fieldname": "actual_qty", "fieldtype": "Float"},
 #         {"label": "Valuation Rate", "fieldname": "valuation_rate", "fieldtype": "Currency"}
 #     ]
-
 #     sql_query = """
 #         SELECT
 #             bin.warehouse,
@@ -39,10 +38,7 @@
 
 #     stock_entries = frappe.db.sql(sql_query, as_dict=True)
 #     return columns, stock_entries
-
-
-
-
+#----------------------------------------------------------------------------------------------------------------------------------------------
 # import frappe
 # index_keywords = ["warehouse", "item_code", "projected_qty", "reserved_qty", 
 #                   "reserved_qty_for_production", "reserved_qty_for_sub_contract", 
@@ -89,6 +85,7 @@
 #     data = [row for row in stock_entries]
 #     return columns, data
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import frappe
 index_keywords = ["warehouse", "item_code"]
 index_prefix = "idx"
