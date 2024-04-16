@@ -3,18 +3,15 @@ import frappe # type: ignore
 def get_context(context):
 	# do your magic here
 	pass
-
 # def send_email_on_webform_creation(doc, method=None):
    
 #     if doc.doctype == "Web Form" and method == "on_submit":
  
 #         email_template = frappe.get_doc("Email Template", "Your Email Template Name")
-
 #         first_name = doc.get("first_name")
 #         last_name = doc.get("last_name")
 #         phone_no = doc.get("phone_no")
 #         email = doc.get("email")
-    
 #         email_content = email_template.content.format(
 #             first_name=first_name,
 #             last_name=last_name,
@@ -53,8 +50,6 @@ def get_context(context):
 # def attach_email_trigger():
 #     frappe.db.after_insert("Web Form", send_email_on_webform_creation)
 def send_email_on_creation(doc, method=None):
-
-    
     if method == "on_create":
         email_content = "A new WebFormDoc has been created with the following details:\n\n"
         email_content += "First Name: {}\n".format(doc.first_name)
